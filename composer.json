@@ -1,8 +1,10 @@
 {
     "name": "elaniin/findable",
     "description": "An SEO add-on for Statamic.",
+    "version": "1.0.0",
+    "license": "MIT",
     "keywords": [
-        "addon",
+        "add-on",
         "statamic",
         "laravel",
         "seo",
@@ -10,7 +12,7 @@
         "opengraph",
         "elaniin"
     ],
-    "type": "statamic-addon",
+    "type": "statamic-add-on",
     "authors": [
         {
             "name": "Vladimir Contreras",

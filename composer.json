@@ -1,7 +1,7 @@
 {
     "name": "elaniin/findable",
     "description": "An SEO add-on for Statamic.",
-    "version": "1.0.0",
+    "minimum-stability": "stable",
     "license": "MIT",
     "keywords": [
         "add-on",

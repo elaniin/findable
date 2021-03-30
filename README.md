@@ -1,4 +1,6 @@
-# Findable
+# Findable 🔎
+
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/elaniin/findable)
 
 Improve SEO in your Statamic-powered site!
 

@@ -1,0 +1,5 @@
+{{ if canonical_url }}
+    <link rel="canonical" href="{{ canonical_url }}" />
+{{ else }}
+    <link rel="canonical" href="{{ permalink }}" />
+{{ /if }}

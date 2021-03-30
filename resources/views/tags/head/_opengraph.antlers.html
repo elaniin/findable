@@ -1,0 +1,29 @@
+<meta property="og:locale" content="{{ site:handle }}" />
+<meta property="og:url" content="{{ permalink }}" />
+<meta property="og:title" content="{{ title }}" />
+
+{{ if og_type }}
+  <meta property="og:type" content="{{ og_type }}" />
+{{ /if }}
+
+{{ if og_type === 'article' }}
+    <meta property="article:published_time" content="{{ published }}" />
+    <meta property="article:modified_time" content="{{ last_modified }}" />
+{{ /if }}
+
+{{ if description }}
+    <meta property="og:description" content="{{ description }}" />
+{{ /if }}
+
+{{ if og_image }}
+    {{ glide:og_image }}
+        <meta property="og:image" content="{{ permalink }}" />
+        <meta property="og:image:width" content="{{ width }}" />
+        <meta property="og:image:height" content="{{ height }}" />
+        <meta property="og:image:alt" content="{{ alt }}" />
+    {{ /glide:og_image }}
+{{ /if }}
+
+{{ if site_name }}
+    <meta property="og:site_name" content="{{ site_name }}" />
+{{ /if }}

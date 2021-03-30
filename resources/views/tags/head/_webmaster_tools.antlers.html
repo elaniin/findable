@@ -1,0 +1,13 @@
+{{ if is_home }}
+  {{ if bing_verification_code }}
+    <meta name="msvalidate.01" content="{{ bing_verification_code }}" />
+  {{ /if }}
+
+  {{ if google_verification_code }}
+    <meta name="google-site-verification" content="{{ google_verification_code }}" />
+  {{ /if }}
+
+  {{ if yandex_verification_code }}
+    <meta name="yandex-verification" content="{{ yandex_verification_code }}" />
+  {{ /if }}
+{{ /if }}

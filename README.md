@@ -1,6 +1,11 @@
-# Findable 🔎
-
-[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/elaniin/findable)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/12446271/113485232-c014d600-9469-11eb-8dfa-637dc21c0e46.png" alt="Findable Logo">
+</p>
+<p align="center">
+<a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/dt/elaniin/findable" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/v/elaniin/findable" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/l/elaniin/findable" alt="License"></a>
+</p>
 
 Improve SEO in your Statamic-powered site!
 
@@ -14,7 +19,7 @@ Improve SEO in your Statamic-powered site!
 - **Marketing:** Forget about code-spagetting when implementing marketing tools! Use Google Tag Manager with a single setting
 - **HREF Lang:** If your Statamic installation is multisite for multiple languages, Findable will find them and add accordingly the available translations for every entry
 
-## Installation
+## 💿 Installation
 
 Via composer:
 
@@ -39,3 +44,7 @@ Publish translations (optional):
 ```shell
 php artisan vendor:publish --provider="Elaniin\Findable\ServiceProvider" --tag=translations
 ```
+
+## 🔒 License
+
+Laravel Sanctum is open-sourced software licensed under the [MIT license](LICENSE).

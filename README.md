@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/12446271/113485232-c014d600-9469-11eb-8dfa-637dc21c0e46.png" alt="Findable Logo">
+<img src="https://user-images.githubusercontent.com/12446271/113485232-c014d600-9469-11eb-8dfa-637dc21c0e46.png" alt="Findable Logo" width="251.5">
 </p>
 <p align="center">
 <a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/dt/elaniin/findable" alt="Total Downloads"></a>
@@ -7,7 +7,9 @@
 <a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/l/elaniin/findable" alt="License"></a>
 </p>
 
+<p align="center">
 Improve SEO in your Statamic-powered site!
+</p>
 
 ## Features
 
@@ -45,6 +47,27 @@ Publish translations (optional):
 php artisan vendor:publish --provider="Elaniin\Findable\ServiceProvider" --tag=translations
 ```
 
+Add Findable's tags to your layout:
+
+- `{{ findable:head }}`: Should be within the `<head>` tag
+- `{{ findable:body }}`: Should be right after the `<body>` opening tag
+- `{{ findable:footer }}`: Should be right before the `</body>` tag
+
+Example `layout.antlers.html`:
+
+```html
+<head>
+	...
+	{{ findable:head }}
+</head>
+
+<body>
+	{{ findable:body }}
+	...
+	{{ findable:footer }}
+</body>
+```
+
 ## 🔒 License
 
-Laravel Sanctum is open-sourced software licensed under the [MIT license](LICENSE).
+Findable is open-sourced software licensed under the [MIT license](LICENSE).

@@ -2,7 +2,6 @@
 
 namespace Elaniin\Findable\Storage;
 
-use Illuminate\Support\Collection;
 use Statamic\Sites\Site as SiteObject;
 use Statamic\Facades\File;
 use Statamic\Facades\Site;

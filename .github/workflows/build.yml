@@ -19,8 +19,8 @@ jobs:
     - name: Install Dependencies 👨🏻‍💻
       uses: php-actions/composer@v5
       with:
-        quiet: true
         php_version: 7.4
+        php_extensions: exif
 
     - name: Run linters 👀
       run: |

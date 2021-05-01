@@ -12,7 +12,7 @@
 Improve SEO in your Statamic-powered site!
 </p>
 
-## Features
+## ✨ Features
 
 - **Meta Tags:** The standard meta tags for title, description, and robots
 - **OpenGraph:** Improve how your website looks when is shared in social networks like Facebook, Twitter, and Slack

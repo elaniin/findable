@@ -2,6 +2,7 @@
 <img src="https://user-images.githubusercontent.com/12446271/113485232-c014d600-9469-11eb-8dfa-637dc21c0e46.png" alt="Findable Logo" width="251.5">
 </p>
 <p align="center">
+<a href="https://github.com/elaniin/findable/actions/workflows/build.yml"><img src="https://github.com/elaniin/findable/actions/workflows/build.yml/badge.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/dt/elaniin/findable" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/v/elaniin/findable" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/elaniin/findable"><img src="https://img.shields.io/packagist/l/elaniin/findable" alt="License"></a>
@@ -11,7 +12,7 @@
 Improve SEO in your Statamic-powered site!
 </p>
 
-## Features
+## ✨ Features
 
 - **Meta Tags:** The standard meta tags for title, description, and robots
 - **OpenGraph:** Improve how your website looks when is shared in social networks like Facebook, Twitter, and Slack

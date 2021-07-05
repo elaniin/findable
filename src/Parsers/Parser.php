@@ -69,9 +69,10 @@ class Parser
     {
         return collect([
             // Globals.
-            'favicon'   => $this->generalSettings->get('global_favicon'),
-            'site'      => $this->context->get('site'),
-            'site_name' => $this->generalSettings->get('site_name'),
+            'favicon'         => $this->generalSettings->get('global_favicon'),
+            'site'            => $this->context->get('site'),
+            'site_name'       => $this->generalSettings->get('site_name'),
+            'disable_authors' => $this->generalSettings->get('disable_authors'),
 
             // Context.
             'is_home'       => $this->isHome(),
@@ -350,8 +351,11 @@ class Parser
         }
 
         if ($page = $this->context->get('page')) {
-            $page       = collect($page);
-            $collection = $page->get('collection')->handle();
+            $page = collect($page);
+
+            if ($collection = $page->get('collection')) {
+                $collection = $page->get('collection')->handle();
+            }
 
             /**
              * We will consider the 'pages' collection (if any) to determine the root since Statamic refers to pages on

@@ -44,5 +44,9 @@
                 "Elaniin\\Findable\\ServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "lint:phpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs"
     }
 }

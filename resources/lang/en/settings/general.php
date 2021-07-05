@@ -61,6 +61,10 @@ return [
             'instruct' => 'External links related to this target such as social profiles, websites, etc.',
             'add_row' => 'Add Link',
         ],
+        'disable_authors' => [
+            'display' => 'Disable Authors',
+            'instruct' => 'Hide the "Written by" text in compatible OpenGraph parsers (like Slack or Twitter).',
+        ],
         'noindex_section' => [
             'display' => 'No Index',
             'instruct' => 'Set to `true` to exclude the **whole site** from search engine indexing - this can also ' .

@@ -69,9 +69,10 @@ class Parser
     {
         return collect([
             // Globals.
-            'favicon'   => $this->generalSettings->get('global_favicon'),
-            'site'      => $this->context->get('site'),
-            'site_name' => $this->generalSettings->get('site_name'),
+            'favicon'         => $this->generalSettings->get('global_favicon'),
+            'site'            => $this->context->get('site'),
+            'site_name'       => $this->generalSettings->get('site_name'),
+            'disable_authors' => $this->generalSettings->get('disable_authors'),
 
             // Context.
             'is_home'       => $this->isHome(),

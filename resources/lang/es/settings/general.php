@@ -58,9 +58,13 @@ return [
             'display' => 'Logo de la compañía',
         ],
         'external_links' => [
-            'display' => 'Enlaces externos',
+            'display' => 'Enlaces Externos',
             'instruct' => 'Enlaces externos relacionados como perfiles sociales, sitios web, etc.',
             'add_row' => 'Añadir enlace',
+        ],
+        'disable_authors' => [
+            'display' => 'Deshabilitar Autores',
+            'instruct' => 'Oculta el texto "Escrito por" en analizadores de OpenGraph compatibles (como Slack o Twitter).',
         ],
         'noindex_section' => [
             'display' => 'No Indexar',

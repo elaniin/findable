@@ -2,7 +2,7 @@
   <meta name="twitter:card" content="{{ twitter_card_type }}" />
 {{ /if }}
 
-{{ if author:name }}
+{{ if (author:name && !disable_authors) }}
   <meta name="twitter:label1" content="{{ trans key="findable::general.written_by" }}">
   <meta name="twitter:data1" content="{{ author:name }}">
 {{ /if }}

@@ -351,8 +351,11 @@ class Parser
         }
 
         if ($page = $this->context->get('page')) {
-            $page       = collect($page);
-            $collection = $page->get('collection')->handle();
+            $page = collect($page);
+
+            if ($collection = $page->get('collection')) {
+                $collection = $page->get('collection')->handle();
+            }
 
             /**
              * We will consider the 'pages' collection (if any) to determine the root since Statamic refers to pages on

@@ -22,7 +22,7 @@ return [
         'site_name' => [
             'display'  => 'Nombre del sitio',
             'instruct' => 'Configura el nombre del sitio. Es utilizado en los meta títulos generados así como ' .
-                'también en la propiedad del nombre de sitio en OpenGraph.'
+                'también en la propiedad del nombre de sitio en Open Graph.'
         ],
         'favicon_section' => [
             'display'  => 'Favicon',
@@ -34,17 +34,17 @@ return [
             'display' => 'Favicon Global',
         ],
         'default_og_section' => [
-            'display'  => 'OpenGraph',
-            'instruct' => 'Propiedades de OpenGraph predeterminadas. También puede ser configurado individualmente ' .
+            'display'  => 'Open Graph',
+            'instruct' => 'Propiedades de Open Graph predeterminadas. También puede ser configurado individualmente ' .
                 'por página.'
         ],
         'default_og_image' => [
             'display'  => 'Imagen',
-            'instruct' => 'Selecciona una imagen para OpenGraph predeterminada en caso de que una entrada de blog ' .
+            'instruct' => 'Selecciona una imagen para Open Graph predeterminada en caso de que una entrada de blog ' .
                 'o página no tengan una configurada. Tamaño recomendado `1.91:1` (ejemplo: `1200x627`).'
         ],
         'knowledge_graph_section' => [
-            'display' => 'Base de Conocimientos de OpenGraph',
+            'display' => 'Base de Conocimientos de Open Graph',
         ],
         'company_or_person' => [
             'company'  => 'Compañía',
@@ -66,7 +66,7 @@ return [
         ],
         'disable_authors' => [
             'display' => 'Deshabilitar Autores',
-            'instruct' => 'Oculta el texto "Escrito por" en analizadores de OpenGraph compatibles (como Slack o Twitter).',
+            'instruct' => 'Oculta el texto "Escrito por" en analizadores de Open Graph compatibles (como Slack o Twitter).',
         ],
         'noindex_section' => [
             'display' => 'No Indexar',

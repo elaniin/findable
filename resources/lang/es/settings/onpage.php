@@ -28,23 +28,23 @@ return [
             'instruct' => 'Evitar que esta página sea indexada por motores de búsqueda.',
         ],
         'share_section_og' => [
-            'display' => 'Datos OpenGraph',
+            'display' => 'Datos Open Graph',
             'instruct' => 'Controla cómo luce esta página cuando es compartida en sitios web que interpretan datos ' .
                 'de OpenGrah (como Facebook, LinkedIn etc).',
         ],
         'og_title' => [
-            'display' => 'Título OpenGraph',
+            'display' => 'Título Open Graph',
         ],
         'og_description' => [
-            'display' => 'Descripción OpenGraph',
+            'display' => 'Descripción Open Graph',
         ],
         'og_image' => [
-            'display' => 'Imagen OpenGraph',
+            'display' => 'Imagen Open Graph',
         ],
         'share_section_twitter' => [
             'display' => 'Twitter Sharing Data',
             'instruct' => 'Controla cómo se ve esta página cuando se comparte en Twitter, estos datos se obtendrán ' .
-                'automáticamente de OpenGraph.',
+                'automáticamente de Open Graph.',
         ],
         'twitter_card_type_page' => [
             'display' => 'Tipo de Tarjeta Twitter',

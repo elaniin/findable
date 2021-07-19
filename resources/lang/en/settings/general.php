@@ -20,7 +20,7 @@ return [
         'site_name' => [
             'display'  => 'Website Name',
             'instruct' => 'Set the name for the website. This will be used in generated meta titles as well as the ' .
-                'OpenGraph site name property.'
+                'Open Graph site name property.'
         ],
         'favicon_section' => [
             'display'  => 'Favicon',
@@ -32,12 +32,12 @@ return [
             'display' => 'Global Favicon',
         ],
         'default_og_section' => [
-            'display'  => 'OpenGraph',
-            'instruct' => 'Default OpenGraph properties. This can also be configured on a per-page basis.'
+            'display'  => 'Open Graph',
+            'instruct' => 'Default Open Graph properties. This can also be configured on a per-page basis.'
         ],
         'default_og_image' => [
             'display'  => 'Image',
-            'instruct' => 'Select the default OpenGraph image in case a page or post do not have that set up. ' .
+            'instruct' => 'Select the default Open Graph image in case a page or post do not have that set up. ' .
                 'Recommended size `1.91:1` (e.g. `1200x627`).'
         ],
         'knowledge_graph_section' => [
@@ -63,7 +63,7 @@ return [
         ],
         'disable_authors' => [
             'display' => 'Disable Authors',
-            'instruct' => 'Hide the "Written by" text in compatible OpenGraph parsers (like Slack or Twitter).',
+            'instruct' => 'Hide the "Written by" text in compatible Open Graph parsers (like Slack or Twitter).',
         ],
         'noindex_section' => [
             'display' => 'No Index',

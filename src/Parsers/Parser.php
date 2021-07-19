@@ -322,7 +322,7 @@ class Parser
     }
 
     /**
-     * Get the OpenGraph image for the current entry/page
+     * Get the Open Graph image for the current entry/page
      *
      * @return string
      */
@@ -338,7 +338,7 @@ class Parser
     }
 
     /**
-     * Get the OpenGraph object type
+     * Get the Open Graph object type
      *
      * @link https://ogp.me/#types
      *

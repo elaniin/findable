@@ -102,6 +102,14 @@ class GeneralSettingsBlueprint implements FindableBlueprint
                             ],
                         ],
                         [
+                            'handle' => 'disable_authors',
+                            'field' => [
+                                'type' => 'toggle',
+                                'display' => __('findable::settings/general.fields.disable_authors.display'),
+                                'instructions' => __('findable::settings/general.fields.disable_authors.instruct'),
+                            ],
+                        ],
+                        [
                             'handle' => 'knowledge_graph_section',
                             'field'   => [
                                 'type'     => 'section',
@@ -145,14 +153,6 @@ class GeneralSettingsBlueprint implements FindableBlueprint
                                 'if'        => [
                                     'company_or_person' => 'equals company',
                                 ],
-                            ],
-                        ],
-                        [
-                            'handle' => 'disable_authors',
-                            'field' => [
-                                'type' => 'toggle',
-                                'display' => __('findable::settings/general.fields.disable_authors.display'),
-                                'instructions' => __('findable::settings/general.fields.disable_authors.instruct'),
                             ],
                         ],
                         [

@@ -28,18 +28,18 @@ return [
             'instruct' => 'Prevent this page from being indexed by search engines.',
         ],
         'share_section_og' => [
-            'display' => 'OpenGraph Sharing Data',
-            'instruct' => 'Control how this page looks when shared on websites which interpret OpenGraph data ' .
+            'display' => 'Open Graph Sharing Data',
+            'instruct' => 'Control how this page looks when shared on websites which interpret Open Graph data ' .
                 '(Facebook, LinkedIn etc).',
         ],
         'og_title' => [
-            'display' => 'OpenGraph Title',
+            'display' => 'Open Graph Title',
         ],
         'og_description' => [
-            'display' => 'OpenGraph Description',
+            'display' => 'Open Graph Description',
         ],
         'og_image' => [
-            'display' => 'OpenGraph Image',
+            'display' => 'Open Graph Image',
         ],
         'share_section_twitter' => [
             'display' => 'Twitter Sharing Data',

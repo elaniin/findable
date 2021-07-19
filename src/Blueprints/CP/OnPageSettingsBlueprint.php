@@ -119,7 +119,7 @@ class OnPageSettingsBlueprint implements FindableBlueprint
                                     'findable::settings/onpage.fields.twitter_card_type_page.instruct'
                                 ),
                                 'localizable'  => true,
-                                'default'      => 'summary',
+                                'default'      => 'summary_large_image',
                                 'width'        => 50,
                                 'options'      => [
                                     'summary'             => __(

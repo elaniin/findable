@@ -173,6 +173,10 @@ class Parser
             return '';
         }
 
+        if (!$this->context->get('date')) {
+            return '';
+        }
+
         return $this->formatIso8601($this->augmented($this->context->get('date')), false);
     }
 
@@ -184,6 +188,10 @@ class Parser
     private function getLastModified(): string
     {
         if ($this->context->get('is_term')) {
+            return '';
+        }
+
+        if (!$this->context->get('last_modified')) {
             return '';
         }
 

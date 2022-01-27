@@ -3,6 +3,7 @@
 namespace Elaniin\Findable\Sitemap;
 
 use Carbon\Carbon;
+use DateTimeInterface;
 use Illuminate\Support\Collection;
 use Spatie\Sitemap\Sitemap as SpatieSitemap;
 use Spatie\Sitemap\Tags\Url;
@@ -56,10 +57,25 @@ class Sitemap
                     Url::create($entry->url())
                         ->setChangeFrequency('')
                         ->setPriority(0)
-                        ->setLastModificationDate(Carbon::createFromTimestamp($entry->lastModified()))
+                        ->setLastModificationDate(self::getLastModified($entry))
                 );
             });
 
         return $sitemap;
+    }
+
+    /**
+     * Get the last modified date of the given entry.
+     *
+     * @param Entry $entry
+     * @return DateTimeInterface
+     */
+    protected static function getLastModified(Entry $entry): DateTimeInterface
+    {
+        if (\is_int($entry->lastModified())) {
+            return Carbon::createFromTimestamp($entry->lastModified());
+        }
+
+        return $entry->lastModified();
     }
 }

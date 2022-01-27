@@ -19,7 +19,6 @@ class Entry
         return EntryFacade::query()
             ->where('collection', $collectionHandle)
             ->where('site', $site)
-            ->whereJsonDoesntContain('data', ['noindex_page' => true])
             ->get();
     }
 }

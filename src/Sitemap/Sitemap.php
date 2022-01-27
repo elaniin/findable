@@ -3,9 +3,11 @@
 namespace Elaniin\Findable\Sitemap;
 
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 use Spatie\Sitemap\Sitemap as SpatieSitemap;
 use Spatie\Sitemap\Tags\Url;
-use Illuminate\Support\Collection;
+use Statamic\Contracts\Entries\Entry;
+use Statamic\Entries\EntryCollection;
 use Statamic\Facades\Site;
 
 class Sitemap
@@ -41,18 +43,22 @@ class Sitemap
      * @param EntryCollection $entries
      * @return SpatieSitemap
      */
-    public static function collection(\Statamic\Entries\EntryCollection $entries)
+    public static function collection(EntryCollection $entries)
     {
         $sitemap = SpatieSitemap::create();
 
-        $entries->each(function ($entry) use ($sitemap) {
-            $sitemap->add(
-                Url::create($entry->url())
-                    ->setChangeFrequency('')
-                    ->setPriority(0)
-                    ->setLastModificationDate(Carbon::createFromTimestamp($entry->lastModified()))
-            );
-        });
+        $entries
+            ->filter(function (Entry $entry) {
+                return $entry->get('noindex_page') !== true;
+            })
+            ->each(function (Entry $entry) use ($sitemap) {
+                $sitemap->add(
+                    Url::create($entry->url())
+                        ->setChangeFrequency('')
+                        ->setPriority(0)
+                        ->setLastModificationDate(Carbon::createFromTimestamp($entry->lastModified()))
+                );
+            });
 
         return $sitemap;
     }
